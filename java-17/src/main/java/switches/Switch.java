@@ -12,7 +12,10 @@ public class Switch {
 
         return switch (dow) {
             case MONDAY, TUESDAY, WEDNESDAY, THURSDAY -> false;
-            case FRIDAY, SUNDAY -> true;
+            case FRIDAY, SUNDAY -> {
+                System.out.println("Yey, a free day!");
+                yield true;
+            }
             default -> throw new IllegalStateException("Unexpected value: " + dow);
         };
     }

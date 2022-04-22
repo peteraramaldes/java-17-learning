@@ -2,6 +2,7 @@ package records;
 
 import org.junit.jupiter.api.Test;
 
+import switches.Switch;
 import util.ValidationException;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
